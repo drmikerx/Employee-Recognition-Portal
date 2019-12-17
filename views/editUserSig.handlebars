@@ -1,0 +1,40 @@
+<script src="../static/scripts/editUserClient.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+
+<div class="container" style="margin-top:100px;">
+  <h1 class="text-center">Edit User Signature</h1>
+</div>
+<div class="container" style="margin-top:25px; margin-bottom:50px;">
+  <p class="text-center">Edit your signature here! (REQUIRED TO CREATE AND SEND AWARDS)</p>
+</div>
+<div class="container ">
+  <div class="row">
+    <div class="col-sm">
+
+    </div>
+    <div class="col-sm">
+      <div class="row">
+        <canvas id="signature-pad" width="400" height="200"
+          style="border-color:black; border-style:solid; border-width: 1px; border-radius:20px;"></canvas>
+      </div>
+      <div class="row">
+        <button id="saveButton" type="button" class="btn btn-primary float-left">Save Image</button>
+        <button id="clearButton" type="button" class="btn btn-primary float-right">Clear</button>
+      </div>
+      <div class="row">
+        Or
+      </div>
+      <div class="row">
+        {{!-- <input id="sig-file" type="file" name="userSig" /> --}}
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="sig-file" name="userSig">
+          <label class="custom-file-label" for="customFile">Choose a 400px x 200px Signature Image</label>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm">
+
+    </div>
+  </div>
+</div>

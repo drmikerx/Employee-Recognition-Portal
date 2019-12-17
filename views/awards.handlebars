@@ -1,0 +1,27 @@
+<div class="container" style="margin-top:100px; margin-bottom:50px">
+    <h1 class="text-center">View or Delete Existing Awards</h1>
+</div>
+<table class="table table-striped table-hover">
+    <thead class="thead-dark text-center">
+        <tr>
+            <th scope="col">Recipient</th>
+            <th scope="col">Recipient Email</th>
+            <th scope="col">Award Type</th>
+            <th scope="col">Award Date</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        {{#each awards}}
+        <tr>
+            <td>{{recipient}}</td>
+            <td>{{recipient_email}}</td>
+            <td>{{award_type}}</td>
+            <td>{{award_date}}</td>
+            <td>
+                <button type="button" class="btn btn-danger" onclick="deleteAward({{id}})">Delete</button>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

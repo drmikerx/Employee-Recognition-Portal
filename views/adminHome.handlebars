@@ -1,0 +1,27 @@
+<div class="container" style="margin-top:100px;">
+    <h1 class="text-center">Welcome to the Admin Site</h1>
+</div>
+<div class="container">
+    <h3 class="text-center">What would you like to do?</h3>
+</div>
+<div class="container" style="margin-top:100px;">
+    <div class="dropdown">
+        <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Add Users
+        </button>
+        <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/addAdminUser">Admin</a>
+          <a class="dropdown-item" href="/addGeneralUser">General</a>
+        </div>
+    </div>
+    <div class="dropdown mt-3">
+        <button class="btn btn-secondary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View/Edit/Delete Users
+        </button>
+        <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/viewAdmins">Admin</a>
+          <a class="dropdown-item" href="/viewGeneralUsers">General</a>
+        </div>
+    </div>
+    <a href="/businessIntelligence" class="btn btn-info btn-lg btn-block mt-3">Business Intelligence</a>
+</div>

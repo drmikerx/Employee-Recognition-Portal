@@ -1,0 +1,36 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+<div class="container" style="margin-top:100px;">
+    <h1 class="text-center">Business Intelligence</h1>
+</div>
+
+<div class="container text-center" style="margin-top:10px; margin-bottom:10px">
+    <div class="btn-group">
+        <button type="button" class="btn btn-info">Select Chart To Show</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu text-center">
+            <a class="dropdown-item" id="noChart" href="#">None</a>
+            <a class="dropdown-item" id="chartOption1" href="#">Number of Awards Created By Users</a>
+            <a class="dropdown-item" id="chartOption2" href="#">Number of Awards of Each Type Created</a>
+            <a class="dropdown-item" id="chartOption3" href="#">Number of Awards By Month</a>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-warning">Select A CSV File to Download</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu text-center">
+            <a class="dropdown-item" id="csvOption1" href="/businessIntelligence/getUserAwardCountCSV" target="_blank">Number of Awards Created By Users</a>
+            <a class="dropdown-item" id="csvOption2" href="/businessIntelligence/getAwardTypeCSV" target="_blank">Number of Awards of Each Type Created</a>
+            <a class="dropdown-item" id="csvOption3" href="/businessIntelligence/getAwardMonthsCSV" target="_blank">Number of Awards By Month</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="chartContainer">
+    <canvas id="myChart"></canvas>
+</div>

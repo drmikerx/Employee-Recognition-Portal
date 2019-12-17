@@ -1,1 +1,2 @@
-# Employee-Recognition-Portal
+# CS467-CapstoneProject
+Employee Recognition Portal

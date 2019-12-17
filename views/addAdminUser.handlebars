@@ -1,0 +1,23 @@
+<div class="container" style="margin-top:100px;">
+    <h1 class="text-center">Add An Admin User</h1>
+</div>
+<div class="container" style="margin-top:25px; margin-bottom:50px;">
+    <p class="text-center">Admins can add/edit/delete other admins and general users and perform business intelligence</p>
+</div>
+<div class="container justify-content-center w-50 mt-3 card card-body">
+    <form id="addAdmin" action="/addAdminUser" method="POST">
+        <div class="form-group">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control" name="Email" id="Email" aria-describedby="emailHelp" placeholder="test@sample.com" required>
+            <small id="emailHelp" class="form-text text-muted">Email address will be used as the account's Username</small>
+        </div>
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required>
+        </div>
+        <div class="form-group col-md-12 text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="text-danger">{{errorText}}</div>
+    </form>
+</div>

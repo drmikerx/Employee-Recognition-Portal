@@ -1,0 +1,55 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Employee Recognition Portal by CCH Inc.</span>       
+</nav>
+<div class="container" style="margin-top:150px;">
+    <div class="row w-100">
+        <div class="col-6 pl-0 text-left">
+            <h3>What Is The Employee Recognition Portal?</h3>
+        </div>
+        <div class="col-6 text-right">
+            <h3>Already have an account? Login Here!</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" style="padding-left:0px; padding-right:50px">
+            <div class="container mt-3 card card-body" style="margin-left:0;">
+                <p>Tired of writing up an employee award from scratch every month?</p>
+				<p></p>
+				<p>Want to give your employees the recognition they deserve with the</p>
+				<p>simple press of a couple of buttons and clicks?</p>
+				<p></p>
+				<p></p>
+                <p>The Employee Recognition Portal is a convenient, easy-to-use</p>
+                <p>way to make sure your star employees' hard work is noticed! </p>
+
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="container justify-content-center mt-3 w-75 card card-body" style="margin-left:75px;">
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="Email">Username (Email address)</label>
+                        <input type="email" class="form-control" name="Email" id="Email" aria-describedby="emailHelp" placeholder="test@sample.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required>
+                        
+                    </div>
+                    <div class="text-danger">{{errorText}}</div>
+                    <div class="form-group col-md-12 text-center">
+                        <button type="submit" class="btn btn-info">Login</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="/forgotPassword">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-6" style="padding-left:190px;">
+            <img src="../static/pictures/best-employee-badge-award-vector-clipart.png" alt="Employee Award Ribbon" height="200" width="200">
+        </div>
+    </div>
+</div>
